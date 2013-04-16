@@ -14,4 +14,9 @@ class Home_Controller extends Base_Controller {
 
 		}
 
+		public function action_test($values)
+		{
+				echo 'test';
+		}
+
 }
