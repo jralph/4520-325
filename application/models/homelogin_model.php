@@ -11,8 +11,8 @@ class HomeLogin_Model extends Base_Model {
 						if(Validate::email(Input::get('username'))){
 
 								// Get the email and password from the input and set appropriate variables.
-								$email = Input::get('username');
-								$password = Input::get('password');
+								$email = strip_tags(Input::get('username'));
+								$password = strip_tags(Input::get('password'));
 
 								// Run the login and check if it is a success, if so, return true, else return false.
 								if(Authenticate::login($email, $password)){

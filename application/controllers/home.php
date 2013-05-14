@@ -36,7 +36,7 @@ class Home_Controller extends Base_Controller {
 				if($loginModel->login() == true){
 
 					//Display simple logged in message and exit the script.
-					echo 'logged in!';
+					header('Location: '.URL::to('profile'));
 					exit;
 				}
 
@@ -51,6 +51,14 @@ class Home_Controller extends Base_Controller {
 
 				// Make sure all current users are logged out.
 				Authenticate::logout();
+
+				// Register User if requested.
+				if($registerModel->register() == true){
+
+					// Display simple registered message and exit.
+					echo 'registered';
+					exit;
+				}
 
 				// Create the register view.
 				View::create('home.register');

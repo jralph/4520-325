@@ -23,7 +23,7 @@ class Validate {
 		public static function password($password, $length)
 		{
 				// Check the password is not blank, if so, return false.
-				if($password != '' && $email != ' '){
+				if($password != ''){
 					// If password is too small, return false.
 					if(strlen($password) < $length){
 						return false;
