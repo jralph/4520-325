@@ -10,7 +10,7 @@
 			Welcome
 		</p>
 		<p>
-			Welcome to your profile! Here you can change your settings and view some besic statistics on what you have used so far!
+			Welcome to your profile! To begin using the system, click on the files link on the navigation bar at the top of the page.
 		</p>
 	</div>
 </div>

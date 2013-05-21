@@ -25,7 +25,7 @@
 					echo $file->file_name;
 					echo '</a>';
 					echo '<br />';
-					echo '<a class="btn btn-warning">Delete</a>';
+					echo '<a href="'.URL::to('files@delete').'/'.$file->id.'" class="btn btn-warning">Delete</a>';
 					echo '</li>';
 				}
 				?>

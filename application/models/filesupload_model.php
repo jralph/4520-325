@@ -38,6 +38,7 @@ class FilesUpload_Model extends Base_Model {
 						// More the uploaded file to the users storage area.
 						move_uploaded_file($tmpName, $root.'/storage/'.$userID.'/'.$fileName);
 
+						// Check if the file already exists.
 						$file_type = DB::query('
 											SELECT * FROM file_types
 											WHERE file_type = :type
@@ -47,7 +48,7 @@ class FilesUpload_Model extends Base_Model {
 											':type' => $fileExt,
 										))
 										->first();
-
+						// If file does not exist, add it to the database.
 						if(count($file_type) != 1){
 							DB::query('
 									INSERT INTO file_types
@@ -60,6 +61,7 @@ class FilesUpload_Model extends Base_Model {
 								))
 								->execute();
 
+								// Get the file type once added.
 								$file_type = DB::query('
 												SELECT * FROM file_types
 												WHERE file_type = :type
@@ -71,8 +73,10 @@ class FilesUpload_Model extends Base_Model {
 											->first();
 						}
 
+						// Get the file type id.
 						$type = $file_type->id;
 
+						// Set file storage location and name.
 						$file_location = '/storage/'.$userID.'/'.$fileName;
 
 						// Insert File Info Into Database
@@ -91,7 +95,9 @@ class FilesUpload_Model extends Base_Model {
 							))
 							->execute();
 
+						// Return true for success.
 						return true;
+
 					} else {
 						// File type is not allowed.
 						echo 'not allowed!';

@@ -60,4 +60,47 @@ class Files_Controller extends Base_Controller {
 		}
 	}
 
+	// Action to delete files. Returns to view page when done.
+	public function action_delete($values)
+	{
+		// Check to make sure a user is logged in.
+		if(Authenticate::check()){
+
+			// Initiate Files Delete Model.
+			$deleteModel = new FilesDelete_Model;
+
+			$deleteModel->setNames(array('file_id'));
+			$deleteModel->setParams($values);
+			$deleteModel->checkParams();
+
+			$params = $deleteModel->params;
+
+			if($deleteModel->delete($params->file_id) == true){
+				// Return to files view page.
+				header('Location: '.URL::to('files@view'));
+			}
+
+		} else {
+			// No User Is Logged In. Return To Home.
+			header('Location: '.URL::to('home'));
+		}
+	}
+
+	// Function to wipe the users storage space and delete all files.
+	public function action_wipe($values)
+	{
+		// Check to make sure a user is logged in.
+		if(Authenticate::check()){
+
+			// Initiate Files Wipe Model.
+			$wipeModel = new FilesWipe_Model;
+
+			// Deelte Files
+			if($wipeModel->wipe() == true){
+				// Return to files view page.
+				header('Location: '.URL::to('files@view'));
+			}
+		}
+	}
+
 }
