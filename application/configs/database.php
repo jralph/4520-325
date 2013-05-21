@@ -24,7 +24,7 @@
  */
 return array(
     'driver'    => 'mysql',
-    'host'      => 'localhost',
+    'host'      => '127.0.0.1',
     'database'  => 'test',
     'username'  => 'root',
     'password'  => '',

@@ -1,0 +1,15 @@
+.files {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.files li {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	height: 220px !important;
+	padding: 0px;
+	margin: 0px;
+}

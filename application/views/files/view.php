@@ -12,6 +12,26 @@
 		</div>
 	</div>
 </div>
+<div class="container-fluid">
+	<div class="container-fluid well">
+			<ul class="files">
+				<?php
+				foreach(Files::get_user_files(Authenticate::user('user_id')) as $file){
+					$file_type = Files::get_file_type($file->file_type);
+					echo '<li class="span2">';
+					echo '<a href="'.$file->file_location.'">';
+					echo '<img width="124" src="/img/type_icons/'.$file_type.'.png">';
+					echo '<br />';
+					echo $file->file_name;
+					echo '</a>';
+					echo '<br />';
+					echo '<a class="btn btn-warning">Delete</a>';
+					echo '</li>';
+				}
+				?>
+			</ul>
+	</div>
+</div>
 
 
 

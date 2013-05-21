@@ -2,30 +2,36 @@
 
 class Files {
 
-	private $files;
-
-	public static function upload($files)
+	public static function get_user_files($user)
 	{
-		$upload = new Files;
-		$upload->files = $files;
+			$files = DB::query('
+						SELECT * FROM files
+						WHERE
+						uploaded_by = :user
+						ORDER BY
+						file_name ASC
+					')
+					->params(array(
+						':user' => $user
+					))
+					->get();
 
-		return $upload;
+			return $files;
 	}
 
-	public function validate()
+	public static function get_file_type($type)
 	{
-		if(isset($this->files)){
-			$file = Validate::files($this->files);
+		$type = DB::query('
+					SELECT * FROM file_types
+					WHERE
+					id = :type
+				')
+				->params(array(
+					':type' => $type
+				))
+				->first();
 
-			return $file;
-		}
-	}
-
-	public function save_file($location)
-	{
-		if(isset($this->files)){
-			move_uploaded_file($file['file']['tmp_name'], path('storage').'/'.Authenticate::user('id').'/'.$file['file']['name']);
-		}
+		return $type->file_type;
 	}
 
 }
