@@ -5,6 +5,13 @@
 Create a fluid container for the content to reside in. This container is fluid
 so that it will fit to the size of the users screen, making mobile site development much easier.
 -->
+<?php if(Error::check('general')): ?>
+	<div class="container-fluid">
+		<div class="alert alert-error">
+			<?php echo Error::get('general'); ?>
+		</div>
+	</div>
+<?php endif; ?>
 <div class="container-fluid">
 	<div class="well">
 		<p class="lead">

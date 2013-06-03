@@ -2,6 +2,8 @@
 
 class HomeLogin_Model extends Base_Model {
 
+		public $login_requested;
+
 		public function login()
 		{
 				// Check if input for username and password are set, if so, begin login procedure.
@@ -22,10 +24,12 @@ class HomeLogin_Model extends Base_Model {
 								}
 
 						} else {
+							$this->login_requested = true;
 							return false;
 						}
 
 				} else {
+					$this->login_requested = false;
 					return false;
 				}
 		}

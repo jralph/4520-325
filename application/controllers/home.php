@@ -38,6 +38,10 @@ class Home_Controller extends Base_Controller {
 					//Display simple logged in message and exit the script.
 					header('Location: '.URL::to('profile'));
 					exit;
+				} elseif($loginModel->login_requested == true) {
+
+					// Set error.
+					Error::set('general', 'Unable To Login, Please Check Username or Password and Try Again.');
 				}
 
 				// Create the login view.
