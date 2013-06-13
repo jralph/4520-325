@@ -14,7 +14,7 @@
  * Values can be accessed from the config object.
  * <code>
  *      //Access config file data
- *      $configs = Config::get('connection', 'location_of_this_file');
+ *      $configs = Config::get('database', 'location_of_this_file');
  *
  *      //Read values once set, returns data from the below array.
  *      $configs->driver

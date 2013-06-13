@@ -29,7 +29,7 @@ so that it will fit to the size of the users screen, making mobile site developm
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label" for="password">Password:</label>
+						<label class="control-label" for="password">Password: <br /><small>Password must be at least 6 characters long.</small></label>
 						<div class="controls">
 							<input type="password" name="password" class="input-large" id="password" placeholder="password">
 						</div>

@@ -1,0 +1,311 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"login",
+				"login_requested  (variable)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package cont",
+				"Package Control: Install Package"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/4520-325/application/controllers/home.php",
+		"/C/xampp/htdocs/4520-325/application/models/homelogin_model.php",
+		"/C/xampp/htdocs/4520-325/application/models/homeregister_model.php",
+		"/C/xampp/htdocs/4520-325/application/library/validate.php",
+		"/C/xampp/htdocs/4520-325/application/views/structure/navigation.php",
+		"//fs-01/e$/Staff/Work/sbunyard/Mr Bunyard/Year 9/Web Design/My Web Page/My Bunyard's Page with CSS.html",
+		"//fs-01/e$/Staff/Work/sbunyard/Mr Bunyard/Year 9/Web Design/My Web Page/stylesheet.css",
+		"//fs-01/e$/Staff/Work/sbunyard/Mr Bunyard/Year 9/Web Design/My Web Page/test.html",
+		"/C/xampp/htdocs/4520-325/application/views/home/register.php",
+		"/C/xampp/htdocs/4520-325/application/views/home/login.php",
+		"/C/xampp/htdocs/4520-325/application/models/filesupload_model.php",
+		"/C/xampp/htdocs/4520-325/application/views/files/view.php",
+		"/C/xampp/htdocs/4520-325/application/views/home/index.php",
+		"/C/xampp/htdocs/4520-325/framework/View/view.php",
+		"/C/xampp/htdocs/4520-325/framework/URL/url.php",
+		"/C/xampp/htdocs/4520-325/application/controllers/files.php",
+		"/C/xampp/htdocs/4520-325/application/views/structure/header.php",
+		"/C/xampp/htdocs/4520-325/application/views/files/upload.php",
+		"//fs-01/system_admins$/Work/jralph/Website and Frog/Web Design and Development/Testing/CSS Responsive Pricing Table/index.html",
+		"//fs-01/system_admins$/Work/jralph/Website and Frog/Web Design and Development/Testing/CSS Responsive Pricing Table/prefixfree.min.js",
+		"/C/xampp/htdocs/4520-325/application/controllers/logout.php",
+		"/C/xampp/htdocs/4520-325/application/library/error.php",
+		"/C/xampp/htdocs/4520-325/application/controllers/error.php",
+		"/C/xampp/htdocs/4520-325/application/models/base_model.php",
+		"/C/xampp/htdocs/4520-325/framework/Autoloader/autoload.php",
+		"/C/xampp/htdocs/4520-325/framework/Database/connection.php",
+		"/C/xampp/htdocs/4520-325/application/models/filesdelete_model.php",
+		"/C/xampp/htdocs/4520-325/application/views/files/index.php",
+		"/C/xampp/htdocs/4520-325/application/models/fileswipe_model.php",
+		"/C/xampp/htdocs/4520-325/application/library/files.php",
+		"/C/xampp/htdocs/4520-325/application/library/user.php",
+		"/C/xampp/htdocs/4520-325/application/views/files/delete.php",
+		"/C/xampp/htdocs/4520-325/application/models/filesview_model.php",
+		"/C/xampp/htdocs/4520-325/application/models/filesindex_model.php",
+		"/C/xampp/htdocs/4520-325/application/views/profile/index.php",
+		"/C/xampp/htdocs/4520-325/public/css/styles.css",
+		"/C/xampp/htdocs/4520-325/application/configs/database.php",
+		"/C/xampp/htdocs/4520-325/framework/Authenticate/authenticate.php",
+		"/C/xampp/htdocs/4520-325/framework/Database/db.php",
+		"/C/xampp/htdocs/4520-325/public/storage/2/config manager - creating driver packages.docx",
+		"/C/xampp/htdocs/4520-325/application/controllers/profile.php",
+		"/C/Users/jralph/AppData/Local/Temp/Rar$DRa0.102/var/www/resources/content/shareit/share.php",
+		"/C/Users/jralph/AppData/Local/Temp/Rar$DRa0.279/var/www/public_html/shareit/index.php",
+		"/C/Users/jralph/AppData/Local/Temp/Rar$DRa0.530/var/www/resources/library/custom/upload.lib.php",
+		"/C/Users/jralph/AppData/Local/Temp/Rar$DRa0.836/var/www/public_html/shareit/upload.php",
+		"/C/xampp/htdocs/4520-325/application/models/profileindex_model.php",
+		"/C/xampp/htdocs/4520-325/application/configs/authenticate.php",
+		"//fs-02/e$/Student/Work/Year 09/09BevanRhys/ICT/A Level/Mr Simon/Coursework/Task 2/index.html",
+		"/C/xampp/htdocs/4520-325/application/library/input.php",
+		"/C/xampp/htdocs/4520-325/framework/Hash/hash.php",
+		"/C/xampp/htdocs/4520-325/framework/core.php",
+		"/C/xampp/htdocs/4520-325/framework/loader.php",
+		"/C/xampp/htdocs/4520-325/framework/master.php",
+		"/C/Program Files/PaperCut NG/providers/print/win/print-provider.conf",
+		"/C/xampp/htdocs/4520-325/application/models/homeindex_model.php",
+		"/C/xampp/htdocs/4520-325/public/index.php",
+		"/C/xampp/htdocs/4520-325/application/views/structure/styles.php",
+		"/C/xampp/htdocs/4520-325/application/views/structure/scripts.php",
+		"/C/xampp/htdocs/4520-325/application/views/structure/footer.php",
+		"/C/xampp/htdocs/4520-325/public/js/jquery.min.js",
+		"/C/xampp/htdocs/4520-325/paths.php",
+		"/C/xampp/htdocs/4520-325/application/views/structure/sidenav.php",
+		"/C/xampp/htdocs/4520-325/application/views/profile/stats.php",
+		"/C/xampp/htdocs/4520-325/application/views/profile/settings.php",
+		"/C/xampp/htdocs/4520-325/framework/Params/params.php",
+		"/C/xampp/htdocs/4520-325/application/views/structure/css.php",
+		"/C/xampp/htdocs/4520-325/application/views/ignore.php",
+		"/C/xampp/htdocs/Joxus/public/css/cosmo.bootstrap.min.css",
+		"/C/xampp/htdocs/Joxus/public/js/scripts.js",
+		"/C/xampp/htdocs/Joxus/application/views/group/ajaxtodo.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/layout/main.blade.php",
+		"/C/xampp/htdocs/Joxus/application/controllers/todo.php",
+		"/C/xampp/htdocs/Joxus/application/views/group/doit.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/layout/sidenav.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/profile/index.blade.php",
+		"/C/xampp/htdocs/Joxus/public/js/ajaxtodo.js",
+		"/C/xampp/htdocs/Joxus/application/views/layout/mainnav.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/layout/group.blade.php",
+		"/C/xampp/htdocs/Joxus/application/libraries/currentuser.php",
+		"/C/xampp/htdocs/Joxus/application/views/layout/profile.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/profile/settings.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/layout/main2.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/layout/public.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/layout/footer.blade.php",
+		"/C/xampp/htdocs/Joxus/application/controllers/base.php",
+		"/C/xampp/htdocs/Joxus/application/controllers/docit.php",
+		"/C/xampp/htdocs/Joxus/application/views/group/manage.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/profile/doit.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/profile/groups.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/home/index.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/profile/invites.blade.php",
+		"/C/xampp/htdocs/Joxus/sftp-config.json",
+		"/C/xampp/htdocs/Joxus/application/views/group/manage/pportal.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/group/manage/general.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/group/manage/categories.blade.php",
+		"/C/xampp/htdocs/Joxus/application/views/group/docit.blade.php",
+		"//fs-01/system_admins$/Work/jralph/My Settings/Application Data/Sublime Text 2/Packages/SFTP/SFTP.py",
+		"/C/xampp/htdocs/Joxus/application/controllers/group.php",
+		"/C/xampp/htdocs/Joxus/public/js/jquery-ui-1.9.2.custom.min.js",
+		"//fs-01/system_admins$/Work/jralph/Downloads/ajax-loader.gif",
+		"/C/xampp/htdocs/Joxus/application/views/group/old/doit.blade.old",
+		"/C/xampp-back/Joxus/application/views/group/doit.blade.php",
+		"/C/xampp/htdocs/Joxus/public/css/unicorn.bootstrap.min.css",
+		"/C/xampp/htdocs/Joxus/public/css/style.css",
+		"/C/xampp/htdocs/Joxus/public/css/datepicker.css",
+		"/C/xampp/htdocs/Joxus/public/css/bootstrap.min.css",
+		"/C/xampp/htdocs/Joxus/public/js/jquery-ui-1.10.2.custom.min.js",
+		"/C/xampp/htdocs/Joxus/html/js/jquery-ui-1.9.2.custom.js",
+		"/C/xampp/htdocs/Joxus/html/js/jquery-ui-1.9.2.custom.min.js",
+		"/C/xampp/htdocs/Joxus/html/js/jquery-sparkline.js",
+		"/C/xampp/htdocs/Joxus/html/js/jquery.knob.js",
+		"/C/xampp/htdocs/Joxus/public/js/jquery-1.9.1.min.js",
+		"/C/xampp/htdocs/Joxus/application/config/error.php",
+		"/C/xampp/htdocs/Joxus/application/libraries/currentgroup.php",
+		"/C/xampp/htdocs/Joxus/application/libraries/currenttodo.php",
+		"/C/xampp/htdocs/Joxus/public/js/google-analytics.js",
+		"/C/xampp/htdocs/Joxus/public/js/bootstrap-datepicker.js",
+		"/C/xampp/htdocs/Joxus/application/config/cache.php",
+		"/C/xampp/htdocs/Joxus/application/config/database.php",
+		"/C/xampp/htdocs/Joxus/application/controllers/profile.php",
+		"/C/xampp/htdocs/Joxus/application/views/layout/todoitem.blade.php",
+		"/C/xampp/htdocs/Joxus/application/libraries/todoactions.php",
+		"/C/xampp/htdocs/Joxus/public/getinfo.php",
+		"/C/xampp/htdocs/Joxus/application/generate.php",
+		"/C/xampp/htdocs/Joxus/laravel/core.php",
+		"/C/xampp/htdocs/Joxus/public/generatetodo.php",
+		"/C/xampp/htdocs/Joxus/application/views/layout/ipn.blade.php",
+		"/C/xampp/htdocs/Joxus/application/libraries/searchdocit.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"	\n",
+			"ff7518",
+			"popover",
+			"}\n",
+			"$todo->name",
+			"$todo->title",
+			"$todo->id"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 88.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true
+}

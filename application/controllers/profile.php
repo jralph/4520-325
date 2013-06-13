@@ -1,6 +1,12 @@
 <?php
 
-// Controller for user profile (http://host/profile)
+
+/**
+ * Profile_Controller
+ *
+ * This controller is setup to display the user profile when the
+ * /profile url is requested.
+ */
 class Profile_Controller extends Base_Controller {
 
 	// Index function, display profile index page.

@@ -1,11 +1,21 @@
 <?php
 
-// Begin the creation of the input class.
-// This class will get any data from the $_POST or $_GET arrays, if set.
+/**
+ * The Input class is a helper class to get data from the $_GET or $_POST variables.
+ * The class will always check for values in the $_POST first, then in the $_GET.
+ *
+ * @author Joseph Ralph <jralph@arrowvaleacademy.co.uk>
+ *
+ */
 class Input {
 
-		// A static function to check if the requested input exists within the $_POST or $_GET array.
-		// Returns the name of the array it exists in, or false if it does not.
+		/**
+		 * Function to check if the $_POST or $_GET contains the requested value name.
+		 * Will return the name of the array that the the value exists in, or false if none.
+		 *
+		 * @param string $input Name of the value to search for.
+		 * @return mixed Returns 'post', 'get' or false.
+		 */
 		public static function has($input)
 		{
 				if(isset($_POST[$input])){
@@ -17,8 +27,14 @@ class Input {
 				}
 		}
 
-		// A static function to return the value of the requested $_POST or $_GET value. Returns
-		// false if the value does not exist.
+		/**
+		 * Function to get the requested value from $_POST or $_GET.
+		 * This function also makes use of the Input::has() to determine if a file is
+		 * available in the $_POST or $_GET arrays.
+		 *
+		 * @param string $input Name of the value to retrieve.
+		 * @return mixed Returns the value from $_POST or $_GET, or false.
+		 */
 		public static function get($input)
 		{
 				if(self::has($input)){

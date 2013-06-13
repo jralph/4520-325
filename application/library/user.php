@@ -1,8 +1,18 @@
 <?php
 
+/**
+ * The User class is used to get the user statistics for files.
+ *
+ * @author Joseph Ralph <jralph@arrowvaleacademy.co.uk>
+ */
 class User {
 
-	// Function to get total size used by the current user.
+	/**
+	 * Function to get the total space (formatted according to size) that the
+	 * user has used.
+	 *
+	 * @return string The size used with b, kb, mb, gb or tb attached.
+	 */
 	public static function space_used()
 	{
 		// Get Document Root
@@ -27,10 +37,16 @@ class User {
 		return $size_used;
 	}
 
-	// Function to convert bytes to needed format.
-	// Will not convert to nearest format. Eg, will not convert 1024 bytes into
-	// 0.00097 mb, it will convert it into 1024 kb. If the size is equal or over
-	// 1mb, it will convert it to mb, and so on.
+	/**
+	 * Function to convert bytes to needed format.
+	 * Will convert to nearest format. Eg, will not convert 1024 bytes into
+	 * 0.00097 mb, it will convert it into 1 kb. If the size is equal or over
+	 * 1mb, it will convert it to mb, and so on.
+	 *
+	 * @param int $bytes The number of bytes to convert.
+	 * @param int $precision The number of decimal places to round to.
+	 * @return string The value of the requested bytes, formatted.
+	 */
 	public static function formatBytes($bytes, $precision = 2) {
 		// Units available to be convereted to.
 	    $units = array('B', 'KB', 'MB', 'GB', 'TB');
@@ -38,6 +54,7 @@ class User {
 	    // Return bytes if bytes is larger than 0.
 	    $bytes = max($bytes, 0);
 
+	    // Get the unit to use.
 	    $pow = floor(($bytes ? log($bytes) : 0) / log(1024));
 	    $pow = min($pow, count($units) - 1);
 

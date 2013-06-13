@@ -1,9 +1,19 @@
 <?php
 
-// A simple validation class to check form inputs.
+/**
+ * A simple validation class to check inputs.
+ *
+ * @author Joseph Ralph <jralph@arrowvaleacademy.co.uk>
+ */
 class Validate {
 
-		// Check email to make sure it contains the @ symbol.
+		/**
+		 * Easily expandable email checking function.
+		 * Will check the input email to see if it contains the @ symbol.
+		 *
+		 * @param string $email The email address to validate.
+		 * @return boolean Will return true if the email is valid, false if invalid.
+		 */
 		public static function email($email)
 		{
 				// Check if $email is blank, if so, return false.
@@ -19,8 +29,15 @@ class Validate {
 				}
 		}
 
-		// Check password to make sure it reaches the min length provided.
-		public static function password($password, $length)
+		/**
+		 * A simple expandable password checking function.
+		 * Will check a given password and length and return true or false.
+		 *
+		 * @param string $password The password to be checked.
+		 * @param int $length Optional length of the password, default is 1.
+		 * @return boolean Will return true if the password is valid, false if not.
+		 */
+		public static function password($password, $length = 1)
 		{
 				// Check the password is not blank, if so, return false.
 				if($password != ''){
@@ -28,7 +45,11 @@ class Validate {
 					if(strlen($password) < $length){
 						return false;
 					} else {
-						return true;
+						if(strlen($password) < 50){
+							return true;
+						} else {
+							return false;
+						}
 					}
 				} else {
 					return false;

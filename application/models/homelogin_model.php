@@ -20,6 +20,7 @@ class HomeLogin_Model extends Base_Model {
 								if(Authenticate::login($email, $password)){
 									return true;
 								} else {
+									$this->login_requested = true;
 									return false;
 								}
 

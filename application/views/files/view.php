@@ -3,7 +3,6 @@
 <?php require path('views').'structure'.DS.'navigation.php'; ?>
 
 
-
 <div class="container-fluid">
 	<div class="well">
 		<form class="form-inline" method="post" action="<?php echo URL::to('files@upload'); ?>" enctype="multipart/form-data">

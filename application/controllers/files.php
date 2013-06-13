@@ -1,6 +1,15 @@
 <?php
 
-// The files controller for http://host/files
+/**
+ * Files_Controller
+ *
+ * This controller manages any actions between the user and
+ * any files they have stored.
+ *
+ * It includes actions to view files, statistics, upload files
+ * delete files and wipe the users storage space.
+ *
+ */
 class Files_Controller extends Base_Controller {
 
 	// Index action, displays the defaults for the /files.
@@ -49,6 +58,7 @@ class Files_Controller extends Base_Controller {
 			// Initiate files upload model.
 			$uploadModel = new FilesUpload_Model;
 
+			// If upload is true.
 			if($uploadModel->upload() == true){
 				// Return to files view page.
 				header('Location: '.URL::to('files@view'));

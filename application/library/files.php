@@ -1,10 +1,24 @@
 <?php
 
-// File controller. Will perform actions to files and retrieve files
-// for specified users.
+/**
+ * The files class is used to perform any actions related to the file
+ * system. This could include actions such as removing files, deleting
+ * files and clearing user storage.
+ *
+ * All functions here are static functions and mostly run database queries.
+ *
+ * @author Joseph Ralph <jralph@arrowvaleacademy.co.uk>
+ *
+ */
 class Files {
 
-	// Get the requested users files. Using user id.
+	/**
+	 * Function to get the requested uers files based on the provided user id.
+	 * Will return the requested files from the DB class as an object.
+	 *
+	 * @param int $user The ID of the user being requested.
+	 * @return object The object of file information returned from the DB.
+	 */
 	public static function get_user_files($user)
 	{
 			// Database query to get files.
@@ -23,8 +37,15 @@ class Files {
 			return $files;
 	}
 
-	// Function to get the file type using type id.
-	public static function get_file_type($type)
+	/**
+	 * Function to get the file type using the ID of the file.
+	 * Will return the file type from the database as an object.
+	 *
+	 * @param int $type_id The ID of the type being requested.
+	 * @return string The file type of the file (eg, docx, png, jpg...ect).
+	 *
+	 */
+	public static function get_file_type($type_id)
 	{
 		// Query to get file type.
 		$type = DB::query('
@@ -33,7 +54,7 @@ class Files {
 					id = :type
 				')
 				->params(array(
-					':type' => $type
+					':type' => $type_id
 				))
 				->first();
 
@@ -41,7 +62,13 @@ class Files {
 		return $type->file_type;
 	}
 
-	// Function to delete file, using file id.
+	/**
+	 * Function to delete a file from the dababase based on the requested ID.
+	 * Will delete a file from the dababase and from storage on the server.
+	 *
+	 * @param int $file The ID of the file to be deleted.
+	 * @return void
+	 */
 	public static function delete_file($file)
 	{
 		// Select file to get file name.
@@ -74,6 +101,13 @@ class Files {
 		unlink($root.'/storage/'.Authenticate::user('user_id').'/'.$file_name->file_name);
 	}
 
+	/**
+	 * Function to clear the users storage completly.
+	 * Wipes all files related to the current user from storage and
+	 * from the databas.
+	 *
+	 * @return true Returns true when the file is deleted.
+	 */
 	// Function to wipe the users storage area.
 	public static function clear_storage()
 	{

@@ -1,6 +1,16 @@
 <?php
 
-// Initiate the controller and extend the base_controller()
+/**
+ * Home_Controller
+ *
+ * The controller to generate any content requested by the /home
+ * URL.
+ *
+ * Most application logic will be performed using a related model
+ * for each action. eg. the /home/index action will use the homeIndex_Model
+ * to run any needed logic.
+ *
+ */
 class Home_Controller extends Base_Controller {
 
 		// Create a class for the index action so that when the home page is requested, the index loads.
@@ -58,9 +68,8 @@ class Home_Controller extends Base_Controller {
 
 				// Register User if requested.
 				if($registerModel->register() == true){
-
-					// Display simple registered message and exit.
-					echo 'registered';
+					Error::set('general_success', 'User creation successful. You may now login with your username and password.');
+					View::create('home.register');
 					exit;
 				}
 

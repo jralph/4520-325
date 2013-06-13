@@ -8,8 +8,8 @@ class FilesUpload_Model extends Base_Model {
 		if(isset($_FILES)){
 			// Check for errors in uploading the file, if so, return error.
 			if($_FILES['file']['error'] > 0){
-				// File Error
-				echo 'error';
+				Error::set('general', 'An error has occurred, please try again or contact support.');
+				return true;
 			} else {
 				// Set variables for the $_FILES and user ID.
 				$fileName = $_FILES['file']['name'];
@@ -25,7 +25,8 @@ class FilesUpload_Model extends Base_Model {
 				$allowedExts = array('gif', 'jpg', 'jpeg', 'png', 'pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'csv');
 
 				if(file_exists($root.'storage/'.$userID.'/'.$fileName)){
-					// File Exists With Same Name
+					Error::set('general', 'File already exists in your area, please rename or delete the file and reupload.');
+					return true;
 				} else {
 					// Check if file is allowed.
 					if(in_array($fileExt, $allowedExts)){
@@ -99,8 +100,8 @@ class FilesUpload_Model extends Base_Model {
 						return true;
 
 					} else {
-						// File type is not allowed.
-						echo 'not allowed!';
+						Error::set('general', 'The file type you have selected is not allowed, please try again.');
+						return true;
 					}
 				}
 			}

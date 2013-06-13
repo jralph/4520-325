@@ -22,7 +22,13 @@ class HomeRegister_Model extends Base_Model {
 							if($this->check_for_user($email)){
 								// Add user and return true or false for success and failure.
 								return $this->add_user($email, $password);
+							} else {
+								Error::set('general', 'Email address already exists, please contact support to reset your account.');
+								return false;
 							}
+						} else {
+							Error::set('general', 'The password or email address entered is invalid, please try again.');
+							return false;
 						}
 				}
 		}

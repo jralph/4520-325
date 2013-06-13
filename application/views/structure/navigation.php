@@ -33,3 +33,18 @@
 			</div>
 		</div>
 </div>
+
+<?php if(Error::check('general')): ?>
+	<div class="container-fluid">
+		<div class="alert alert-error">
+			<?php echo Error::get('general'); ?>
+		</div>
+	</div>
+<?php endif; ?>
+<?php if(Error::check('general_success')): ?>
+	<div class="container-fluid">
+		<div class="alert alert-success">
+			<?php echo Error::get('general_success'); ?>
+		</div>
+	</div>
+<?php endif; ?>
