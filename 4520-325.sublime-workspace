@@ -72,6 +72,8 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/4520-325/.gitignore",
+		"/C/xampp/htdocs/4520-325/public/pear/composer.json",
 		"/C/xampp/htdocs/4520-325/public/pear/sample3.php",
 		"/C/xampp/htdocs/4520-325/public/pear/sample2.php",
 		"/C/xampp/htdocs/4520-325/public/pear/sample1.php",
@@ -197,9 +199,7 @@
 		"/C/xampp/htdocs/Joxus/application/config/cache.php",
 		"/C/xampp/htdocs/Joxus/application/config/database.php",
 		"/C/xampp/htdocs/Joxus/application/controllers/profile.php",
-		"/C/xampp/htdocs/Joxus/application/views/layout/todoitem.blade.php",
-		"/C/xampp/htdocs/Joxus/application/libraries/todoactions.php",
-		"/C/xampp/htdocs/Joxus/public/getinfo.php"
+		"/C/xampp/htdocs/Joxus/application/views/layout/todoitem.blade.php"
 	],
 	"find":
 	{
