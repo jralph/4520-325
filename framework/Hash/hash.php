@@ -1,5 +1,4 @@
 <?php
-
 /**
  * A Simple Hashing Method to create secure passwords and values to be used.
  * Uses the key setup in the authenticate config file to generate the salt.
@@ -15,6 +14,12 @@
  */
 class Hash {
 
+		/**
+		 * Function to hash a given string. 
+		 *
+		 * @param string $string The string to be hashed.
+		 * @return string The returned hashed value.
+		 */
 		public static function make($string)
 		{
 				$value = sha1(md5(md5(sha1($string))));
@@ -33,6 +38,13 @@ class Hash {
 				return $value.$string;
 		}
 
+		/**
+		 * Function to check a hashed value against a string.
+		 *
+		 * @param string $string The string to check.
+		 * @param string $hashed_value The hashed value to match to the string.
+		 * @return boolean
+		 */
 		public static function check($string, $hashed_value)
 		{
 				$hashed = static::make($string);

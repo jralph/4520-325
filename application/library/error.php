@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The errors class is used to check if any errors have been activated and display them.
  * It also has a specific function to set an error to be displayed when the user next
